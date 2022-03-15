@@ -10,5 +10,7 @@ export function renderPlayerEl(playerObject) {
     ageEl.textContent = 'Age: ' + playerObject.age;
     teamEl.textContent = `Team: ${playerObject.team.name}. Stadium: ${playerObject.team.stadium}`;
 
+    playerEl.append(nameEl, ageEl, teamEl);
+    
     return playerEl;
 }
