@@ -17,6 +17,6 @@ export const animals = [
     {
         name: 'monkey',
         diet: 'omnivore',
-        rating: 
-    }
+        rating: 9
+    },
 ];

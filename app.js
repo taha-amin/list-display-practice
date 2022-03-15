@@ -1,7 +1,6 @@
 import { books } from './books-data.js';
 import { renderBookEl } from './render-books.js';
 
-// import functions and grab DOM elements
 const bookListEl = document.querySelector('.books-list');
 
 for (let book of books) {
@@ -10,9 +9,13 @@ for (let book of books) {
     bookListEl.append(bookEl);
 }
 
-// initialize global state
+import { animals } from './animals-data.js';
+import { renderAnimalEl } from './render-animals.js';
 
-// set event listeners 
-  // get user input
-  // use user input to update state 
-  // update DOM to reflect the new state
+const animalListEl = document.querySelector('.animals-list');
+
+for (let animal of animals) {
+    const animalEl = renderAnimalEl(animal);
+
+    animalListEl.append(animalEl);
+}

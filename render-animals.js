@@ -6,9 +6,9 @@ export function renderAnimalEl(animal) {
     const imgEl = document.createElement('img');
 
     animalEl.classList.add('animals');
-    nameEl.textContent = animal.name;
-    dietEl.textContent = animal.diet;
-    ratingEl.textContent = animal.rating;
+    nameEl.textContent = `Name: ` + animal.name;
+    dietEl.textContent = `Diet: ` + animal.diet;
+    ratingEl.textContent = `Rating: ` + animal.rating;
     imgEl.src = `assets/${animal.name}.png`;
 
     animalEl.append(nameEl, dietEl, ratingEl, imgEl);
