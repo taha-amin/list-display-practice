@@ -7,6 +7,7 @@ export const players = [
             stadium: 'Le Parc des Princes'
         },
     },
+
     {
         name: 'Lebron James',
         age: 37,
@@ -15,6 +16,7 @@ export const players = [
             stadium: 'crypto.com Arena'
         },
     },
+
     {
         name: 'Tom Brady',
         age: 44,
@@ -23,6 +25,7 @@ export const players = [
             stadium: 'Raymond James Stadium'
         },
     },
+    
     {
         name: 'Michael Jordan',
         age: 59,
