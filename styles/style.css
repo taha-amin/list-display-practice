@@ -127,3 +127,7 @@ footer {
 .players-list {
     box-shadow: -2px -1px 15px 5px #000000;
 }
+
+.artists-list {
+    box-shadow: -4px 5px 15px 5px #000000;
+}
