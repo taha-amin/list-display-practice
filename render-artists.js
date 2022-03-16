@@ -4,15 +4,20 @@ export function renderArtistsEl(artistObject) {
     const albumNumberEl = document.createElement('p');
     //const songListEl = document.createElement('p');
 
-    renderArtistsEl.classlist.add('artists');
+    artistEl.classList.add('artist');
 
     artistNameEl.textContent = `Artist: ${artistObject.name}`;
     albumNumberEl.textContent = `Albums: ${artistObject.albums}`;
-    
+
+    artistEl.append(artistNameEl, albumNumberEl);
+
+
     for (let song of artistObject.songs) {
         const songListEl = document.createElement('p');
         songListEl.textContent = `Popular Songs: ${song}`;
+
+        artistEl.append(songListEl);
     }
 
-    artistEl.append(artistNameEl, albumNumberEl);
+    return artistEl;
 }

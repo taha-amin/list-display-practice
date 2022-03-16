@@ -7,9 +7,13 @@ import { renderAnimalEl } from './render-animals.js';
 import { players } from './players-data.js';
 import { renderPlayerEl } from './render-players.js';
 
+import { artists } from './artists-data.js';
+import { renderArtistsEl } from './render-artists.js';
+
 const bookListEl = document.querySelector('.books-list');
 const animalListEl = document.querySelector('.animals-list');
 const playerListEl = document.querySelector('.players-list');
+const artistListEl = document.querySelector('.artists-list');
 
 for (let book of books) {
     const bookEl = renderBookEl(book);
@@ -27,4 +31,10 @@ for (let player of players) {
     const playerEl = renderPlayerEl(player);
 
     playerListEl.append(playerEl);
+}
+
+for (let artist of artists) {
+    const artistEl = renderArtistsEl(artist);
+
+    artistListEl.append(artistEl);
 }
