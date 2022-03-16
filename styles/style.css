@@ -111,3 +111,23 @@ footer {
     }
 
   }
+
+.books-list {
+    box-shadow: -2px -3px 12px 8px #000000;
+}
+
+.animals-list {
+    box-shadow: 5px 5px 15px 5px #000000;
+}
+
+.animals-list img {
+    width: 100px;
+}
+
+.players-list {
+    box-shadow: -2px -1px 15px 5px #000000;
+}
+
+.artists-list {
+    box-shadow: -4px 5px 15px 5px #000000;
+}
